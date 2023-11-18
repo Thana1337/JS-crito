@@ -5,6 +5,7 @@ import Sitetitle from '../components/Sitetitle'
 import ContactPage from '../components/ContactPage'
 import MessageForm from '../components/MessageForm'
 
+
 const Contact = () => {
   return (
     <div className='wrapper'>

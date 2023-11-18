@@ -10,7 +10,8 @@ const Showcase = () => {
     <img className="drawing-lines" src={element} alt="Drawing lines"/>
     <div className="container">
         <div className="content">
-            <SectionTitle title="We Provide The Best Business Solutions" description="Establish your vision and value proposition and turn them into testable prototypes." />
+            <h1>We Provide The Best Business Solutions</h1>
+            <p>Establish your vision and value proposition and turn them into testable prototypes.</p>
             <Button title="Get Consulting" type="yellow-animation" url="/get-consulting"/>
             <Button title="Learn More" type="trans-animation" url="/learn-more"/>  
         </div>

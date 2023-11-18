@@ -7,11 +7,15 @@ import Service from './views/Service'
 import News from './views/News'
 import Contact from './views/Contact'
 import PageNotFound from './views/PageNotFound'
+import ScrollToTop from './components/ScrollToTop'
+import AutoScrollToTop from './components/AutoScrollToTop'
 
 
 function App() {
   return (
     <BrowserRouter>
+    <AutoScrollToTop/>
+      <ScrollToTop/>
       <Routes>
         <Route path='/' element={<Home/>} />
         <Route path='/Service' element={<Service/>} />

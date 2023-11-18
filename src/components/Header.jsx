@@ -1,13 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Logo from '../assets/img/Logo.svg'
+import MobileMeny from './MobileMeny'
 
 const Header = () => {
+
+    const [menuOpen, setMenuOpen] = useState(false)
+    console.log(menuOpen)
   return (
+    <>
+    {menuOpen ? (    
+    <MobileMeny/>):
+     <></> }
     <header>
     <div className="container">
         <Link to="/"><img src={Logo} alt="Crito logotype"/></Link>
-        <button className="menu-bars"><i className=" fa-regular fa-bars"></i></button>
+        <button onClick={()=>setMenuOpen(!menuOpen)} className={`menu-bars ${menuOpen ? 'fixed': ''}`}>{menuOpen ? (<i className="fa-regular fa-xmark"></i>): <i className=" fa-regular fa-bars"></i>} </button>
         <div className="menu">
             <div className="top-menu">
                 <div className="contact-information">
@@ -42,7 +50,8 @@ const Header = () => {
             </div>     
         </div>
     </div>
-</header>
+    </header>
+    </>
   )
 }
 

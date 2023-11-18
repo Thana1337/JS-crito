@@ -53,7 +53,7 @@ const MessageForm = () => {
                         <input className={form.errors.email ? "error" : ""} type="email" placeholder="Email*" name="email" value={form.values.email} onChange={form.handleChange}/>
                         <textarea className={form.errors.message ? "error" : ""} cols="30" rows="10" placeholder="Your Message*" name="message" value={form.values.message} onChange={form.handleChange}></textarea>
                         <div className="btn-animation-div">
-                            <button className="buttonyellow-animation" type='submit' > <span>Send Message</span> </button>
+                            <button className="button-animation" type='submit' > <span>Send Message</span> </button>
                         </div>  
                     </form>
                 </div>

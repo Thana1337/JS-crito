@@ -1,0 +1,26 @@
+.ScrollToTop{
+    position: fixed;
+    z-index: 1;
+    bottom: 80px;
+    right: 150px;
+    background: #191919;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.3s;
+    color: #ffffff;
+    border: none;
+    &:hover{
+        color: #000000;
+        background: #ffffff;
+    }
+}
+
+
+.hide{
+
+    display: none;
+    transition: all 1s;
+}

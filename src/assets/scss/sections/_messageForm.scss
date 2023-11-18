@@ -59,9 +59,10 @@
     }
 }
 
-.buttonyellow-animation {
+.button-animation {
     position: relative;
     display: flex;
+    z-index: 0;
     justify-content: center;
     align-items: center;
     background: #F9D783;
@@ -75,7 +76,7 @@
     cursor: pointer; /* Add cursor pointer to mimic link behavior */
   }
   
-  .buttonyellow-animation:after {
+  .button-animation:after {
     content: " ";
     width: 0%;
     height: 100%;
@@ -85,13 +86,13 @@
     right: 0;
   }
   
-  .buttonyellow-animation:hover::after {
+  .button-animation:hover::after {
     right: auto;
     left: 0;
     width: 100%;
   }
   
-  .buttonyellow-animation span {
+  .button-animation span {
     text-align: center;
     text-decoration: none;
     width: 100%;
@@ -103,7 +104,7 @@
     transition: all 0.3s ease-in-out;
   }
   
-  .buttonyellow-animation:hover span {
+  .button-animation:hover span {
     color: #F0EFE9;
     animation: scaleUp 0.3s ease-in-out;
   }

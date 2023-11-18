@@ -12,6 +12,7 @@ import OurTeam from '../components/OurTeam'
 import Reviews from '../components/Reviews'
 import ArticlesAndNews from '../components/ArticlesAndNews'
 import NewsLetter from '../components/NewsLetter'
+import MobileMeny from '../components/MobileMeny'
 
 const Home = () => {
   return (

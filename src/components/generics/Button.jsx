@@ -15,8 +15,6 @@ const Button= ({type, url,title}) => {
                 return `buttonblack-animation`
             case `trans-animation`:
                 return `buttontrans-animation`
-
-
             default:
                 return `buttontrans`
         }

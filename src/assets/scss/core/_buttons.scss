@@ -132,13 +132,14 @@
     a{
         position: relative;
         display: flex;
+        z-index: 0;
         justify-content: center;
         align-items: center;
         background: #F9D783;
         font-family: 'Inter', sans-serif;
         font-weight: 600;
         box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
+        overflow-x: hidden;
         border-radius: 40px;
         border: none;
        }
@@ -183,13 +184,14 @@
     a{
         position: relative;
         display: flex;
+        z-index: 0;
         justify-content: center;
         align-items: center;
         background: transparent;
         font-family: 'Inter', sans-serif;
         font-weight: 600;
         // box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
+        overflow-x: hidden;
         border-radius: 40px;
         border: 1px solid #191919;
        }
@@ -234,13 +236,14 @@
     a{
         position: relative;
         display: flex;
+        z-index: 0;
         justify-content: center;
         align-items: center;
         background: #000000;
         font-family: 'Inter', sans-serif;
         font-weight: 600;
         box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
-        overflow: hidden;
+        overflow-x: hidden;
         border-radius: 40px;
         border: none;
        }
