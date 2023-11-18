@@ -15,7 +15,7 @@ const ArticlesAndNews = () => {
                 <SectionTitle title="Article & News" description="Get Every Single Articles & News"/>
             </div>
             <div>
-                <Button title="Browse Articles" type="trans-animation" url="/articles-&-news/browse-articles" />
+                <Button title="Browse Articles" type="trans-animation" url="/News" />
             </div>
         </div>
         <div className="article-news-middle">
