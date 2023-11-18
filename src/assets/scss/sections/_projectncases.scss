@@ -1,0 +1,81 @@
+.project-studies{
+    .container{ 
+        padding: 0px 80px;
+        padding-top: 80px;
+        .title{
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .galleri{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 25px;
+            padding: 0px 80px;
+            justify-content: center;
+            align-items: center;
+            @media (min-width:1400px) {
+                grid-template-columns: 1fr 1fr;
+                padding: 0px 0px;
+                }
+            .p-s-img{
+                padding: 0px 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .read-more-border{
+                    display: inline-block;
+                    width: 100%;
+                }
+                @media (min-width:1400px) {
+                    padding: 0px 20px;
+                    display: grid;
+                    align-items: start;
+                    }
+            }
+            h3{
+                margin-top: 30px;
+                padding-bottom: 10px;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 22px;
+                font-weight: 700;
+            }
+            a{
+                justify-content: center;
+                display: flex;
+                margin-bottom: 20px;
+                font-family: 'Inter', sans-serif;
+                font-size: 14px;
+                font-weight: 500; 
+                text-decoration: none;
+                color: #000000;
+                border-top: 1px solid #DAD9D3;
+                padding-top: 30px;
+                @media (min-width:1400px) {
+                    justify-content: end;
+                    }
+            }
+            i{
+                padding-left: 5px;
+                font-size: 16px;
+            }
+
+            #invis{
+                display: none;
+                @media (min-width:1400px) {
+                    display: block;
+                    }
+            }
+        }
+        .p-s-buttom{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 60px;
+            margin-bottom: 90px;
+            a span {
+                padding: 15px 40px;
+            }
+        }
+    }
+}

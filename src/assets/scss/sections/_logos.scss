@@ -1,0 +1,42 @@
+.company{
+    background-color: #FFFFFF;
+    .container{ 
+        padding-top: 50px;
+        padding-bottom: 50px;
+        column-gap: 69px;
+        display: grid; 
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        justify-items: center;
+        align-items: center;
+
+        
+        @media (min-width:768px) {
+            padding-top: 50px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr); 
+        }
+
+        @media (min-width:1200px) { 
+            padding-top: 100px;
+            grid-template-columns: repeat(5,1fr); 
+            grid-template-rows: 1fr; 
+        } 
+
+        img{
+            margin: 20px;
+
+            @media (min-width:768px) {
+                margin: 15px;
+            }
+
+            @media (min-width:1024px) {
+                margin: 20px;
+            }
+            @media (min-width:1200px) {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        } 
+    }
+}

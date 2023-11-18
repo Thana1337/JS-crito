@@ -1,0 +1,98 @@
+.testimonial{ 
+    background-color: #F9D783;
+    padding-bottom: 0px;
+    @media (min-width:1200px) {
+        padding-bottom: 100px;
+        }
+    .container{
+        background-color: #FFFFFF;
+        padding-top: 130px;
+        max-width: 1520px;
+        .testimonial-top{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .testimonial-middle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 60px 100px;
+            text-align: center;
+            @media (min-width:1200px) {
+                text-align: start;
+                }
+            .review-box{
+                padding: 0px;
+                @media (min-width:1200px) {
+                    padding-right: 35px;
+                    }
+                .review-box-top{
+                    display: grid;
+                    i{
+                        color: #F94D1C;
+                    }
+                    p{
+                        padding: 20px 0px;
+                        line-height: 35px;
+                        font-family: 'Inter', sans-serif;
+                        font-size: 18px;
+                        font-weight: 600; 
+                        font-style: italic;
+                        @media (min-width:1200px) {
+                            padding-right: 20px;
+                            }
+                    }
+                }
+                .review-box-bottom{
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 5px;
+                    img{
+                        margin-right: 0px;
+                    }
+                    @media (min-width:1200px) {
+                        display: flex;
+                        justify-content: space-around;
+                        }
+                    h3{
+                        font-family: 'DM Sans', sans-serif;
+                        font-size: 22px;
+                        font-weight: 700;
+                        margin: 0;
+                    }
+                    p{
+                        font-family: 'Inter', sans-serif;
+                        font-size: 16px;
+                        font-weight: 400; 
+                        margin: 0;
+                        display: none;
+                        @media (min-width:1200px) {
+                            display: block;
+                            }
+                    }
+                }
+            }
+        }
+        .testimonial-bottom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px;
+            padding-bottom: 120px;
+            
+            a{
+                i{
+                    margin-left: 20px;
+                }
+            }
+            a span {
+                padding: 15px 35px;
+                font-size: 16px;
+            }
+        }
+    }
+}

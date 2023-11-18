@@ -1,0 +1,88 @@
+.Hero{
+    background-color: #F0EFE9;
+    position: relative;
+    z-index: 0;
+    .drawing-lines{
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+
+        img{
+            margin-right: -50px;
+            display: none;
+            
+            @media (min-width:1200px) {
+                display: block;
+            } 
+        }
+    
+
+        .content{
+            padding: 60px 80px;
+            text-align: center;
+            @media (min-width:1200px) {
+                text-align: start;
+                padding: 60px 0px;
+            }
+
+            h1{
+                font-weight: 700;
+                font-family:'DM Sans', sans-serif;
+                font-size: 50px;
+                padding-left: 5px;
+                padding-right: 5px;
+
+                @media (min-width:532px) {
+                    font-size: 60px;
+                    text-align: unset; 
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    }
+                @media (min-width:576px) {
+                    font-size: 70px;
+                    text-align: unset; 
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    }
+                @media (min-width:1400px) {
+                    font-size: 86px;
+                    text-align: unset;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    }
+            }
+            p{ 
+                font-family: 'Inter', sans-serif; 
+                font-weight: 400; 
+                font-size: 15px; 
+                padding-top: 20px;
+                padding-bottom: 30px;
+                padding-left: 5px;
+                padding-right: 5px;
+
+                @media (min-width:532px) {
+                    font-size: 15px;
+                    text-align: unset; 
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    }
+                @media (min-width:576px) {
+                    font-size: 20px;
+                    text-align: unset;
+                    padding-left: 0px;
+                    padding-right: 0px;
+                    }
+            }
+            a{  
+                margin-right: 5px;
+            }
+        }
+    }
+}

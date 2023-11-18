@@ -1,0 +1,93 @@
+.services{
+    background-color: #F0EFE9;
+    position: relative;
+    z-index: 0;
+    .drawing-lines{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .container{
+        padding-top: 80px;
+        padding-bottom: 100px;
+        .top{
+            text-align: center;
+            @media (min-width:1200px) {
+                text-align: start;
+                }
+            p{
+                color: #F94D1C;
+                font-family: 'Inter', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+            }
+            h2{
+                font-family: 'DM Sans', sans-serif;
+                font-size: 45px;
+                font-weight: 700;
+                padding-bottom: 35px;
+            }
+        }
+        .middle{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 20px;
+            padding: 0px 80px;
+            @media (min-width:1200px) {
+                padding: 0px 0px;
+                }
+
+            @media (min-width:1200px) {
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: 1fr;
+                }
+            .slide{
+                background-color: #ffffff;
+                padding: 40px 30px;  
+                margin-right: 10px;
+                transition: all 0.5s;
+                
+                &:hover{
+                    background-color: #F9D783;
+                    .circle-icon{
+                        background: #ffffff;
+                        color: #000000;
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 40px;
+                        vertical-align: middle;
+                        font-size: 20px;
+                    }
+
+
+                }
+                i{
+                    font-size: 20px;
+                    padding-bottom: 15px;
+                }
+                h3{
+                    padding-bottom: 10px;
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+                p{
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .bottom{
+            text-align: center;
+            padding-top: 55px;
+            i{
+                padding-left: 10px;
+            }
+        }
+    }
+}

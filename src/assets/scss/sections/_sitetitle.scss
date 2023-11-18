@@ -1,0 +1,26 @@
+.lets-connect{
+    position: relative;
+    padding: 150px 0px;
+    background-color: #F0EFE9;
+    display: flex;
+    z-index: 0;
+    img{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        @media (min-width:1200px) {
+            width: auto;
+            }
+        
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 56px;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        
+    }
+}

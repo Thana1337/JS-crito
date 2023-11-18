@@ -1,0 +1,83 @@
+.team{
+    background-color: #F9D783;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    .container{
+        .team-top{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px;
+            text-align: center;
+            a span {
+                padding: 15px 40px;
+                font-size: 16px;
+            }
+            i{
+                margin-left: 20px;
+            }
+            @media (min-width:1200px) {
+                display: flex;
+                text-align: start;
+                justify-content: space-between;
+                }
+        }
+        .team-middle{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            justify-content: space-around;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 50px;
+            @media (min-width:1400px) {
+                display: flex;
+                gap: 30px;
+                }
+            .team-member{
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                @media (min-width:1400px) {
+                    justify-content: space-around;
+                    text-align: start;
+                    }
+            }
+            h3{
+                margin-top: 30px;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 22px;
+                font-weight: 700;
+            }
+            p{
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-weight: 500; 
+            }
+        }
+        .team-bottom{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            i{
+                font-size: 12px;
+                padding: 0px 6px;
+                color: #33191919;
+                transition: all 0.5s;
+                cursor: pointer;
+
+                &.active{
+                    color: #191919;
+                    &:hover{
+                        color: #191919;
+                    }
+                }
+                &:hover{
+                    color: #707070;
+                }
+            }
+
+        }
+    }
+}
