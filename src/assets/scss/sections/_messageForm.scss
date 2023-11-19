@@ -29,13 +29,21 @@
                 }
         }
             form{
+                label{
+                    text-align: start;
+                    padding: 10px 15px;
+                    display: inline-block;
+
+                }
+                .noBorder{
+                    border: none;
+                }
                 display: grid;
                 justify-content: center;
                 @media (min-width:768px) {
                     justify-content: unset;
                     }
                 input{
-
                     padding: 10px 15px;
                     border-radius: 25px;
                     text-align: center;
@@ -45,11 +53,10 @@
                     
                 }
                 textarea{
-                    margin-bottom: 10px;
                     resize: none;
                     padding: 10px 15px;
                     border-radius: 25px;
-                    margin-bottom: 50px;
+                    margin-bottom: 60px;
                     text-align: center;
                     @media (min-width:768px) {
                         text-align: start;
@@ -73,7 +80,7 @@
     border-radius: 40px;
     border: none;
     width: 100%;
-    cursor: pointer; /* Add cursor pointer to mimic link behavior */
+    cursor: pointer;
   }
   
   .button-animation:after {
@@ -109,8 +116,25 @@
     animation: scaleUp 0.3s ease-in-out;
   }
 
+
 .error{
     border: 1px solid rgb(78, 6, 6);
 }
+
+.green::after{
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background: #AAFF00;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    right: 0;
+    box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+}
+.green:hover span {
+    color: #fdfdfd;
+    font-weight: 700;
+    animation: scaleUp 0.3s ease-in-out;
+  }
 
   

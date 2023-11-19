@@ -1,5 +1,8 @@
 .article-news{
     .container{
+        .hide{
+            display: none;
+        }
         padding-top: 50px;
         .article-news-top{
             display: grid;

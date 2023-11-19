@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Articles from '../components/generics/Articles'
 import MoreNews from '../components/MoreNews'
 import Sitetitle from '../components/Sitetitle'
+import NewsLetter from '../components/NewsLetter'
 
 const News = () => {
   return (
@@ -11,7 +12,7 @@ const News = () => {
       <Header/>
       <Sitetitle title="News & Articles"/>
       <MoreNews/>
-      <Articles/>
+      <NewsLetter/>
       <Footer/>
     </div>  
   )

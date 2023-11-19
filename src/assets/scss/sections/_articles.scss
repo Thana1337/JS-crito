@@ -1,0 +1,112 @@
+.article-news-middle{
+    p{
+        padding-top: 20px;
+    }
+    a{
+        padding: 15px;
+    }
+    .imgContainer {
+        width: 100%;
+        height: 100%;
+        max-width: 420px;
+        max-height: 230px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    
+    }
+    display: grid;
+    position: relative;
+    gap: 30px;
+    padding: 50px 80px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    @media (min-width:1400px) {
+        padding: 0px 0px;
+        text-align: start;
+        }
+    #article2{
+        display: none;
+    }
+    #article3{
+        display: none;
+    }
+
+    @media (min-width:1400px) {
+        display: flex;
+        #article2{
+            display: block;
+        }
+        #article3{
+            display: block;
+        }
+
+
+        }
+    article{
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #DAD9D3;
+        a{
+            text-decoration: none;
+            color: #191919;
+        }
+        @media (min-width:1200px) {
+            border: none;
+            }
+        
+        article p{
+            color: #6A6C71;
+            font-family: 'Inter', sans-serif;
+            font-size: 16px;
+            font-weight: 400; 
+            padding-top: 30px;
+            @media (min-width:1200px) {
+                padding-top: 0px;
+                }
+        }
+        h3{
+            font-family: 'DM Sans', sans-serif;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .date{
+            position: absolute;
+            padding: 20px;
+            text-align: center;
+            margin-left: 150px;
+            @media (min-width:576px){
+                margin-left: 0;
+            }
+            @media (min-width:992px){
+                margin-left: 180px;
+            }
+            @media (min-width:1400px){
+                margin-left: 0px;
+            }
+
+
+            div{
+                display: inline-block;
+                background-color: #F9D783;
+                padding: 12px 15px;
+                font-family: 'DM Sans', sans-serif;
+                font-size: 22px;
+                font-weight: 700;
+                line-height: 20px;
+
+                p{
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 500; 
+                    margin: 0;
+                }
+            }
+            
+        }
+    }
+}
